@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sinhagad Fort</title>
+    <link rel="stylesheet" href="sinhagad.css" />
+    <script defer src="sinhagad.js"></script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=YOUR_GOOGLE_MAPS_API_KEY&callback=initMap"
+      async
+      defer
+    ></script>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="logo">GASSGo</div>
+      <input type="text" placeholder="Search..." />
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">Destinations</a>
+        <a href="#">Sites</a>
+        <a href="#">About</a>
+        <a href="#">Payment</a>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <img src="sinhagad.png" alt="Sinhagad Fort" />
+    </section>
+
+    <!-- Content Section -->
+    <section class="content">
+      <h1>Sinhagad Fort</h1>
+      <p>
+        Sinhagad Fort, also known as Kondhana Fort, is an ancient hill fortress
+        located approximately 30 kilometers southwest of Pune...
+      </p>
+    </section>
+
+    <!-- Location Section -->
+    <section class="location">
+      <h2>Location</h2>
+      <div id="map"></div>
+    </section>
+
+    <!-- Information Section -->
+    <section class="info">
+      <h2>Best Time to Visit:</h2>
+      <p>
+        Sinhagad Fort is a popular tourist destination throughout the year...
+      </p>
+      <br />
+      <h2>Points of Interest:</h2>
+      <ul>
+        <li>
+          <strong>Samadhi of Tanaji Malusare:</strong> A memorial shrine...
+        </li>
+        <li><strong>Kundeshwar Temple:</strong> An ancient temple...</li>
+        <li><strong>Kalyan Darwaza:</strong> The main entrance...</li>
+        <li>
+          <strong>Watchtowers and Bastions:</strong> Offering panoramic views...
+        </li>
+        <li><strong>Underground Water Reservoirs:</strong> Demonstrating...</li>
+      </ul>
+    </section>
+    <br />
+
+    <!-- Stay-Ins Section -->
+    <section class="stay">
+      <h2>Stay-Ins:</h2>
+      <div class="sort-container">
+        <label for="sort">Sort By:</label>
+        <select id="sort">
+          <option value="fees">Fees (Low to High)</option>
+          <option value="ratings">Ratings (High to Low)</option>
+          <option value="high-low">Fees (High to Low)</option>
+        </select>
+      </div>
+      <div id="hotel-list"></div>
+    </section>
+
+    <!-- guides-section -->
+    <section class="guides">
+      <h2>Guides:</h2>
+      <select id="guide-sort">
+        <option value="rating">Sort-By ⬇</option>
+      </select>
+      <div id="guide-list"></div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-container">
+        <div class="footer-logo">GASSGo ✈</div>
+        <div class="footer-links">
+          <a href="firstpage.html">Home</a>
+          <a href="#">Destinations</a>
+          <a href="#">Sites</a>
+          <a href="#">Options</a>
+          <a href="#">Contact</a>
+        </div>
+        <div class="footer-contact">
+          <p>Email: support@gassgo.com</p>
+          <p>Phone: +91 98765 43210</p>
+          <p>Address: Mumbai, India</p>
+        </div>
+        <div class="footer-social">
+          <a href="#"><img src="facebook.png" alt="Facebook" /></a>
+          <a href="#"><img src="instagram.png" alt="Instagram" /></a>
+          <a href="#"><img src="twitter.png" alt="Twitter" /></a>
+        </div>
+      </div>
+      <p class="footer-bottom">© 2025 GASSGo. All rights reserved.</p>
+    </footer>
+
+    <!-- Chatbot -->
+    <div id="chatbot">
+      <img src="chatbot.png" alt="Chatbot" />
+    </div>
+  </body>
+</html>
