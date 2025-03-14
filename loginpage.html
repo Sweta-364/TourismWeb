@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login & Signup</title>
+    <link rel="stylesheet" href="loginpage.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="form-container" id="login-form">
+        <h2>Welcome Back!</h2>
+        <input type="email" placeholder="Email address" class="input-field" />
+        <input type="password" placeholder="Password" class="input-field" />
+        <a href="firstpage.html"><button class="hover-btn">Login</button></a>
+        <div class="social-login">
+          <button class="social-btn">Sign in with Google</button>
+          <button class="social-btn">Sign in with Apple</button>
+        </div>
+        <p class="toggle">
+          Don't have an account? <a href="#" onclick="toggleForm()">Sign Up</a>
+        </p>
+      </div>
+      <div class="form-container" id="signup-form" style="display: none">
+        <h2>Get Started Now</h2>
+        <input type="text" placeholder="Name" class="input-field" />
+        <input type="email" placeholder="Email address" class="input-field" />
+        <input type="password" placeholder="Password" class="input-field" />
+        <button class="hover-btn">Sign Up</button>
+        <div class="social-login">
+          <button class="social-btn">Sign in with Google</button>
+          <button class="social-btn">Sign in with Apple</button>
+        </div>
+        <p class="toggle">
+          Already have an account?
+          <a href="#" onclick="toggleForm()">Sign In</a>
+        </p>
+      </div>
+    </div>
+    <script src="loginpage.js"></script>
+  </body>
+</html>

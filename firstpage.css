@@ -1,0 +1,229 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f8f8f8;
+}
+
+/* Navbar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  background: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.search-bar input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.search-bar button {
+  padding: 8px;
+  background: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+}
+
+.nav-item {
+  margin-left: 20px;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.nav-item:hover {
+  transform: scale(1.1);
+}
+
+.nav-item:hover {
+  background: black;
+  color: white;
+  border-radius: 5px;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+  background-color: white;
+}
+
+/* Image Grid */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding: 50px;
+}
+
+.grid-item {
+  position: relative;
+  cursor: pointer;
+}
+
+.grid-item img {
+  width: 100%;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Hover Effects */
+.grid-item:hover img {
+  filter: blur(5px);
+}
+
+.grid-item:hover .overlay {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: white;
+}
+
+/* Floating Chatbot */
+.chatbot {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+}
+
+.chatbot img {
+  width: 100%;
+  border-radius: 50%;
+}
+/* Image Grid */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding: 50px;
+}
+
+.grid-item {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.grid-item img {
+  height: 100%;
+  width: 100%;
+  display: block;
+  transition: filter 0.3s ease-in-out;
+}
+
+/* Hover effect: Blur image slightly */
+.grid-item:hover img {
+  filter: blur(3px);
+}
+
+/* Description box */
+.overlay {
+  position: absolute;
+  bottom: -100%; /* Start hidden */
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 20px;
+  text-align: center;
+  transition: bottom 0.4s ease-in-out;
+}
+
+/* Slide up effect on hover */
+.grid-item:hover .overlay {
+  bottom: 0;
+}
+
+/* Footer Styles */
+footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 50px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.footer-logo {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.footer-links a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.footer-contact p {
+  margin: 5px 0;
+}
+
+.footer-social a img {
+  width: 25px;
+  margin: 0 5px;
+  transition: 0.3s;
+}
+
+.footer-social a img:hover {
+  transform: scale(1.1);
+}
+
+.footer-bottom {
+  margin-top: 20px;
+  font-size: 14px;
+  opacity: 0.7;
+}

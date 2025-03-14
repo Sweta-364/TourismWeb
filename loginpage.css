@@ -1,0 +1,79 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url("loginpage.png") no-repeat center center/cover;
+}
+.container {
+  display: flex;
+  width: 90%;
+  max-width: 550px;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 30px;
+  overflow: hidden;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  float: left;
+  margin-right: 49%;
+  margin-bottom: 3%;
+}
+.form-container {
+  flex: 1;
+  padding: 150px;
+  backdrop-filter: blur(0px);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+h2 {
+  margin-bottom: 15px;
+}
+input {
+  width: 90%;
+  padding: 25px;
+  margin: 25px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  display: block;
+}
+button {
+  width: 110%;
+  padding: 25px;
+  background: green;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+button:hover {
+  background: darkgreen;
+}
+.social-login {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  width: 90%;
+}
+.social-btn {
+  background: white;
+  color: black;
+  width: 56px;
+  border: 1px solid #ccc;
+  flex: 1;
+  margin: 5px;
+  max-height: px;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+.social-btn:hover {
+  background: #f0f0f0;
+  transform: scale(1.05);
+}
+.toggle {
+  text-align: left;
+  margin-top: 5px;
+}
